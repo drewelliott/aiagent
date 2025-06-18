@@ -25,7 +25,7 @@ def run_python_file(working_directory, file_path, args=None):
             capture_output=True,
             text=True,
             timeout=30,
-            cws=abs_working_dir,
+            cwd=abs_working_dir,
         )
         output = []
         if result.stdout:
